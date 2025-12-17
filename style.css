@@ -1,0 +1,569 @@
+<html>
+<head>
+<style>
+
+*{
+	margin:0;
+	padding:0;
+}
+
+.main{
+	width: 100%;
+	background-image: url('bg.png');
+	background-position: cover;
+	height: auto;
+        position: relative;
+        font-family: sans-serif;
+
+}
+
+.navbar{
+  	width: 88%;
+	display: flex;
+	margin: auto;
+	padding: 50px 0;
+	align-items: center;
+	justify-content: space-between; 
+}
+
+.navbar .logo{
+	width: 80px;
+	cursor: pointer;
+	margin-top: -5%;
+	margin-left: -4%;
+}
+
+ul {
+	margin-top: -4%
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 16px;
+}
+
+ul li a { 
+	font-size : 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2F4F4F;
+	margin-top: -4%;
+}
+ul li a:hover{
+	color: #FFFAF0;
+}
+
+.navbar ul li a {
+    position: relative;
+    font-weight: 500;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #c084fc;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('bg.png');
+}
+
+.navbar{
+  	width: 88%;
+	display: flex;
+	margin: auto;
+	padding: 50px 0;
+	align-items: center;
+	justify-content: space-between; 
+	position: relative;
+}
+
+.navbar .logo{
+	width: 80px;
+	cursor: pointer;
+	margin-top: -5%;
+	margin-left: -4%;
+}
+
+
+ul {
+	margin-top: -4%
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 16px;
+}
+
+ul li a { 
+	font-size : 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2F4F4F;
+	margin-top: -4%;
+}
+ul li a:hover{
+	color: #FFFAF0;
+}
+
+.navbar ul li a {
+    position: relative;
+    font-weight: 500;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #c084fc;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+#datetime {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%, -50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #2F4F4F;
+  white-space: nowrap;
+  pointer-events: none; 
+}
+
+#datetime {
+  background: #8A2BE2;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.info {
+	margin-left: 2%;
+	margin-top: 6%;
+}
+
+.info h1 {
+	text-align: left;
+	font-size: 65px;
+	text-shadow: 
+        0 0 5px #c084fc,
+        0 0 15px #d8b4fe,
+        0 0 30px #e9d5ff;
+    animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+.info h3:nth-of-type(2) {
+	font-syle: italic;
+	font-sizing: 18px;
+	color: #000000;
+	border-left: 4px solid #c084fc;
+	padding-left: 15px;
+	margin-top: 20px;
+	letter-spacing: 1px;
+	line-height: 24px;
+}
+
+
+.image {
+	width: 40%;
+	height: 60%;
+	position: absolute;
+	right: 100px;
+	bottom: 0;
+}
+
+.image {
+    position: absolute;
+    right: 80px;
+    top: 140px;
+    width: 320px;
+    height: 420px;
+}
+
+.image img {
+    transition: all 0.4s ease;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.image img:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+}
+
+--------------------section biodata---------------------------------
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  background-color: #f0f0f0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.biodata {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.biodata h3 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.biodata h4 {
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+.biodata p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.biodata ol {
+  margin-left: 20px;
+}
+
+.biodata ol li {
+  margin-bottom: 6px;
+}
+
+.photo img {
+  width: 280px;
+  height: 360;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 10px solid #ffffff;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+}
+
+-----------------------------table routine section---------------------------
+table {
+    width: 95%;
+    margin: 40px auto;          
+    border-collapse: separate;  
+    background-color: #D3D3D3;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    font-size: 14px;
+}
+
+table, th, td {
+    background-color: #ffffff;
+    border: 2px solid #008080;
+    padding: 12px;        
+    font-size: 14px;
+}
+
+
+th {
+    background: #2f4f4f;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+td {
+    padding: 10px;
+    text-align: center;
+   color: #2f4f4f;
+}
+
+tr:nth-child(even) td {
+    background: #f5f5f5;
+}
+
+
+tr:hover td {
+    background: #B0E0E6;
+}
+
+h1 {
+    text-align: center;
+    text-color: #008B8B;  
+    margin-bottom: 10px; 
+    padding: 10px;
+}
+
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+----------------------education section-------------------------------
+.education {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.education h1 {
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #663399, #008080);
+  padding: 20px;
+  border-radius: 12px;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.edu-box {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.edu-box h2 {
+  color: #2f4f4f;
+  border-left: 6px solid #87CEEB;
+  padding-left: 10px;
+}
+
+.edu-box h3, 
+.edu-box h4 {
+  color: #008080;
+  margin-top: 15px;
+}
+
+p,li, dt, dd {
+  text-align: left;
+  color: #2f4f4f;
+  line-height: 1.6;
+  
+}
+
+ul, ol {
+  margin-left: 25px;
+}
+
+.highlight {
+  background-color: #B0E0E6;
+  padding: 10px;
+  border-left: 5px solid #4682B4;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.semester {
+  margin-top: 15px;
+}
+
+dl dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.total-subject {
+  background-color: #e6f7f1;
+  padding: 10px;
+  border-left: 5px solid #3cb371;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.subject-summary {
+  margin-left: 40px;
+  margin-top: 8px;
+}
+
+.subject-summary li {
+  list-style-type: "- ";
+  margin-bottom: 5px;
+}
+
+------------------------------section skill-------------------------------------	
+#skills {
+    padding: -10px 0;
+    text-align: center;
+}
+
+
+.skill-title-main {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+.skill-title-main::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #808000;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+
+.skills-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 40px; 
+}
+
+
+.skill-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.skill-icon {
+    width: 90px;
+    height: 90px;
+    background: #f5f5f5;
+    border-radius: 50%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    object-fit: contain;
+}
+
+
+.skill-box h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.skill-box p {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+
+}
+
+--------------------section galery----------------------------------
+.gallery {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.gallery h1 {
+    text-align: center;
+     text-shadow: 0 0 10px #3a7272;
+    margin-bottom: 30px;
+}
+
+.img {
+  height: 50%;
+  width: 50%;
+
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+
+.gallery-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-container .caption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+    color: #3a7272;
+    mark: hsl(0, 0%, 100%);
+}
+
+
+@media (max-width: 600px) {
+    .gallery-container img {
+        height: 180px;
+    }
+}
+
+
+</body>
+</html>
