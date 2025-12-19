@@ -401,7 +401,6 @@ tr:hover td {
 
 h1 {
     text-align: center;
-	text-decoration: underline;
     text-color: #008B8B;  
     margin-bottom: 10px; 
     padding: 10px;
@@ -652,6 +651,7 @@ dl dt {
 </body>
 
 </html>
+
 
 
 
