@@ -516,6 +516,28 @@ dl dt {
   margin-bottom: 5px;
 }
 
+	.bookmark-btn {
+    position: fixed;      
+    bottom: 40px;         
+    right: 40px;           
+    background: linear-gradient(135deg, #663399, #008080);
+    color: #ffffff;
+    font-size: 28px;       
+    padding: 15px 18px;
+    border-radius: 50%;    
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;         
+}
+
+.bookmark-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
 ------------------------------section skill-------------------------------------	
 #skills {
     padding: -10px 0;
@@ -651,6 +673,7 @@ dl dt {
 </body>
 
 </html>
+
 
 
 
