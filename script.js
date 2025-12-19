@@ -17,3 +17,21 @@ function updateDateTime() {
 
 setInterval(updateDateTime, 1000);
 updateDateTime();
+
+ const music = document.getElementById("bgm");
+  const btn = document.getElementById("audioBtn");
+
+  let isPlaying = false;
+
+  btn.addEventListener("click", () => {
+    if (!isPlaying) {
+      music.play();
+      btn.textContent = "⏸";
+      btn.classList.add("playing");
+    } else {
+      music.pause();
+      btn.textContent = "▶";
+      btn.classList.remove("playing");
+    }
+    isPlaying = !isPlaying;
+  });
