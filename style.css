@@ -248,6 +248,39 @@ ul li a:hover{
   background: linear-gradient(135deg, #22c55e, #16a34a);
 }
 
+	/* === SOCIAL MEDIA LINKS === */
+.social-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #c084fc, #8A2BE2);
+  color: white;
+
+  font-size: 18px;
+  text-decoration: none;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.45);
+}
+
+
 --------------------section biodata---------------------------------
 
 body {
@@ -601,3 +634,4 @@ dl dt {
 </body>
 
 </html>
+
