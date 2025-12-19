@@ -214,6 +214,39 @@ ul li a:hover{
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 25px 50px rgba(0,0,0,0.35);
 }
+/* === AUDIO BUTTON === */
+.audio-control {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+}
+
+#audioBtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  border: none;
+  cursor: pointer;
+
+  font-size: 22px;
+  color: white;
+
+  background: linear-gradient(135deg, #c084fc, #8A2BE2);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
+  transition: all 0.3s ease;
+}
+
+#audioBtn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+#audioBtn.playing {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
 
 --------------------section biodata---------------------------------
 
@@ -566,4 +599,5 @@ dl dt {
 
 
 </body>
+
 </html>
