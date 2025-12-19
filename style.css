@@ -679,13 +679,13 @@ dl dt {
 }
 
 .fav-page h1 {
-    color: #fff;
+    color: #808080;
     letter-spacing: 2px;
 }
 
 .fav-page h2 {
     margin-top: 50px;
-    color: #aaa;
+    color: #778899;
 }
 
 .container {
@@ -754,6 +754,7 @@ dl dt {
 </body>
 
 </html>
+
 
 
 
